@@ -97,3 +97,13 @@ body {
     right: 1.8em;
     bottom: 1.8em;
 }
+
+.attribution {
+    text-align: center;
+    font-size: 12px;
+    color: #111;
+}
+
+.attribution a {
+    color: red;
+}
