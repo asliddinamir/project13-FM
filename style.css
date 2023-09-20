@@ -1,5 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
+* {
+    box-shadow: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    margin: 40px 20px 40px 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    font-size: 40px;
+}
+
+.bold_title {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    font-weight: bold;
+    color: hsl(234, 12%, 34%);
+    font-size: 40px;
+}
+
+.description {
+    color: hsl(229, 6%, 66%);
+    font-size: 16px;
+    padding: 24px 0 0;
+}
+
+.cards {
+    display: grid;
+    gap: 1.7em;
+    margin: 2em 2em 3.5em 2em;
+}
+
+.card {
+    padding: 1.5em 2em 7.7em 2em;
+    border-radius: 5px;
+    box-shadow: 0 7px 18px rgba(97, 98, 158, 0.3);
+    position: relative;
+    min-width: 250px;
+    transform: translateY(-20px);
+}
+
+.card:nth-of-type(1) {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card:nth-of-type(2) {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card:nth-of-type(3) {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card:nth-of-type(4) {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card_title {
+    color: hsl(234, 12%, 34%);
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.card_description {
+    color: hsl(229, 6%, 66%);
+    font-size: .8rem;
+    line-height: 1.7;
+}
+
+.card_img {
+    position: absolute;
+    right: 1.8em;
+    bottom: 1.8em;
 }
